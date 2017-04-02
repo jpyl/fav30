@@ -23,4 +23,16 @@ public class TagHandler {
 		return tagService.listTags();
 	}
 	
+	@RequestMapping(value="/{id}", method=RequestMethod.GET)
+	@ResponseBody
+	public List<Tag> listById(String id){
+		return tagService.listTags();
+	}
+	
+	
+	@RequestMapping(value="/{name}", method=RequestMethod.GET)
+	@ResponseBody
+	public List<Tag> listByName(String name){
+		return tagService.listTags();
+	}
 }
