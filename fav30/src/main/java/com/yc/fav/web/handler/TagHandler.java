@@ -29,10 +29,10 @@ public class TagHandler {
 		return tagService.listTags();
 	}
 	
-	
 	@RequestMapping(value="/{name}", method=RequestMethod.GET)
 	@ResponseBody
 	public List<Tag> listByName(String name){
 		return tagService.listTags();
 	}
+
 }
